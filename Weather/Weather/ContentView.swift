@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isNight = false
+    
     var body: some View {
         ZStack {
-            BackgroundView(topColor: .blue, bottomColor: Color("lightBlue"))
+            BackgroundView(isNight: isNight)
             VStack {
                 CityTextView(cityName: "Cupertino, CA")
-                  
-                MainWeatherStatusView(imageName: "cloud.sun.fill", temperature: 78)
+                
+                let statusIcon = isNight ? "moon.stars.fill" : "cloud.sun.fill"
+                MainWeatherStatusView(imageName: statusIcon,
+                                      temperature: 78)
                 
                 HStack(spacing: 20) {
                     WeatherDayView(dayOfWeek: "TUE",
@@ -37,7 +42,7 @@ struct ContentView: View {
                 Spacer()
                 
                 Button {
-                    //
+                    isNight.toggle()
                 } label: {
                     WeatherButton(title: "Change Day Time", textColor: .blue, backgroundColor: .white)
                 }
@@ -66,8 +71,9 @@ struct WeatherDayView: View {
             Text(dayOfWeek)
                 .font(.system(size: 16, weight: .medium, design: .default))
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
+//                .foregroundStyle(.white, .orange, .green)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
             
@@ -79,13 +85,19 @@ struct WeatherDayView: View {
 }
 
 struct BackgroundView: View {
-    var topColor: Color
-    var bottomColor: Color
+    var isNight: Bool
+    
     var body: some View {
-        LinearGradient(colors: [topColor, bottomColor],
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .edgesIgnoringSafeArea(.all)
+//        LinearGradient(colors: [isNight ? .black : .blue,
+//                                isNight ? .gray : Color("lightBlue")],
+//                       startPoint: .topLeading,
+//                       endPoint: .bottomTrailing)
+//        .ignoresSafeArea()
+        
+        // iOS 16 new features
+        ContainerRelativeShape()
+            .fill(isNight ? Color.black.gradient : Color.blue.gradient)
+            .ignoresSafeArea()
     }
 }
 
