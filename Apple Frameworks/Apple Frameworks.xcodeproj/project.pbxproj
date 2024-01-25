@@ -15,6 +15,7 @@
 		FEE03ECF2B62C2B10087251C /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE03ECE2B62C2B10087251C /* FrameworkDetailView.swift */; };
 		FEE03ED22B62C5150087251C /* AFButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE03ED12B62C5150087251C /* AFButtonLabel.swift */; };
 		FEE03ED42B62CA320087251C /* FramworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE03ED32B62CA320087251C /* FramworkGridViewModel.swift */; };
+		FEE03ED62B631C170087251C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE03ED52B631C170087251C /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FEE03ECE2B62C2B10087251C /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		FEE03ED12B62C5150087251C /* AFButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButtonLabel.swift; sourceTree = "<group>"; };
 		FEE03ED32B62CA320087251C /* FramworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramworkGridViewModel.swift; sourceTree = "<group>"; };
+		FEE03ED52B631C170087251C /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				FEE03EBC2B5DA4EE0087251C /* Apple_FrameworksApp.swift */,
 				FEE03ECC2B5DA6D40087251C /* FrameworkGridView.swift */,
+				FEE03ED52B631C170087251C /* SafariView.swift */,
 				FEE03ED32B62CA320087251C /* FramworkGridViewModel.swift */,
 				FEE03ECE2B62C2B10087251C /* FrameworkDetailView.swift */,
 				FEE03ED12B62C5150087251C /* AFButtonLabel.swift */,
@@ -163,6 +166,7 @@
 				FEE03ED42B62CA320087251C /* FramworkGridViewModel.swift in Sources */,
 				FEE03ED22B62C5150087251C /* AFButtonLabel.swift in Sources */,
 				FEE03EBD2B5DA4EE0087251C /* Apple_FrameworksApp.swift in Sources */,
+				FEE03ED62B631C170087251C /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
