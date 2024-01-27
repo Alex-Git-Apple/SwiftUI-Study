@@ -26,8 +26,15 @@ struct FrameworkListViewDetailView: View {
             Button {
                 isShowingSafariView = true
             } label: {
-                AFButtonLabel(title: "Learn more")
+                Label("Learn more", systemImage:"book.fill")
             }
+            // iOS 15 new style
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+            .tint(.red)
+            .buttonBorderShape(.roundedRectangle(radius: 20))
+            
+            Spacer()
 
         }
         .fullScreenCover(isPresented: $isShowingSafariView) {
