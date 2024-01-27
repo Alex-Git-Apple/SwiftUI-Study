@@ -11,7 +11,7 @@ struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
     var body: some View {
         NavigationView {
-            renderView()
+            mainView
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         LayoutButton(isGrid: $viewModel.isShowingGridView)
@@ -21,7 +21,7 @@ struct MainView: View {
     }
     
     @ViewBuilder
-    private func renderView() -> some View {
+    private var mainView: some View {
         if viewModel.isShowingGridView {
             FrameworkGridView(viewModel: viewModel)
         } else {
