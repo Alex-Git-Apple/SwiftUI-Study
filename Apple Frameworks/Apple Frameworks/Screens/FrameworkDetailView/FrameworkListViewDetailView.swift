@@ -1,22 +1,18 @@
 //
-//  FrameworkDetailView.swift
+//  FrameworkListViewDetailView.swift
 //  Apple Frameworks
 //
-//  Created by Pin Lu on 1/25/24.
+//  Created by Pin Lu on 1/26/24.
 //
 
 import SwiftUI
 
-struct FrameworkGridViewDetailView: View {
-    
+struct FrameworkListViewDetailView: View {
     var framework: Framework
-    @Binding var isShowingDetailView: Bool
     @State var isShowingSafariView = false
     
     var body: some View {
         VStack {
-            XDismissButton(isShowing: $isShowingDetailView)
-            
             Spacer()
             
             FrameworkTitleView(framework: framework)
@@ -41,10 +37,8 @@ struct FrameworkGridViewDetailView: View {
     }
 }
 
-struct FrameworkDetailView_Previews: PreviewProvider {
-     
+struct FrameworkListViewDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkGridViewDetailView(framework: MockData.sampleFramework,
-                            isShowingDetailView: .constant(false))
+        FrameworkListViewDetailView(framework: MockData.sampleFramework)
     }
 }
