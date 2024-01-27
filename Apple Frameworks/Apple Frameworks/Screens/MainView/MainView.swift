@@ -46,6 +46,7 @@ struct LayoutButton: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
+                    .colorMultiply(Color(.label))
                     
             }
             .padding(.trailing, 10)
