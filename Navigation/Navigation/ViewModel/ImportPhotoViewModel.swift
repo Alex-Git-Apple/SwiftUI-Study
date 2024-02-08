@@ -22,11 +22,15 @@ class ImportPhotoViewModel: ObservableObject {
     }
     
     func sendPhotosToGPT() {
-        print("Send request to GPT.")
         if let images = images {
             Task {
-                try? await gptManager.getSummary(from: images)
+                await gptManager.sendImagesToGPT(images: images)
             }
+        }
+        
+        // Temprory call
+        Task {
+            await gptManager.sendImagesToGPT(images: images)
         }
     }
     

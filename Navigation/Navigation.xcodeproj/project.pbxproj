@@ -24,6 +24,8 @@
 		FEB61B702B71A701005D25D2 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB61B6F2B71A701005D25D2 /* MockData.swift */; };
 		FEB61B732B71D7E2005D25D2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB61B722B71D7E2005D25D2 /* Message.swift */; };
 		FEB61B762B71FFFF005D25D2 /* ImportPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB61B752B71FFFF005D25D2 /* ImportPhotoViewModel.swift */; };
+		FEB61B922B72F05F005D25D2 /* MMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB61B912B72F05F005D25D2 /* MMError.swift */; };
+		FEC5413B2B73351600BF334A /* ChatBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC5413A2B73351600BF334A /* ChatBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		FEB61B6F2B71A701005D25D2 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		FEB61B722B71D7E2005D25D2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FEB61B752B71FFFF005D25D2 /* ImportPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPhotoViewModel.swift; sourceTree = "<group>"; };
+		FEB61B912B72F05F005D25D2 /* MMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMError.swift; sourceTree = "<group>"; };
+		FEC5413A2B73351600BF334A /* ChatBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +84,11 @@
 				FEB61B2E2B6D7975005D25D2 /* NavigationApp.swift */,
 				FEB61B712B71AE32005D25D2 /* Utils */,
 				FEB61B682B71A3C7005D25D2 /* Managers */,
-				FEB61B742B71FFDE005D25D2 /* ViewModel */,
 				FEB61B3E2B6EC16D005D25D2 /* Model */,
+				FEB61B742B71FFDE005D25D2 /* ViewModel */,
 				FEB61B3F2B6F120D005D25D2 /* HomeScreen */,
 				FEB61B422B6F147A005D25D2 /* LetterListScreen */,
+				FEC541392B73345100BF334A /* ChatBoxScreen */,
 				FEB61B492B6F41F8005D25D2 /* ImportPhotoScreen */,
 				FEB61B322B6D7977005D25D2 /* Assets.xcassets */,
 				FEB61B342B6D7977005D25D2 /* Preview Content */,
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				FEB61B6F2B71A701005D25D2 /* MockData.swift */,
+				FEB61B912B72F05F005D25D2 /* MMError.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -160,6 +166,14 @@
 				FEB61B752B71FFFF005D25D2 /* ImportPhotoViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FEC541392B73345100BF334A /* ChatBoxScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FEC5413A2B73351600BF334A /* ChatBoxView.swift */,
+			);
+			path = ChatBoxScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +251,7 @@
 				FEB61B6E2B71A5A9005D25D2 /* CommonTypes.swift in Sources */,
 				FEB61B702B71A701005D25D2 /* MockData.swift in Sources */,
 				FEB61B412B6F1220005D25D2 /* HomeViewModel.swift in Sources */,
+				FEB61B922B72F05F005D25D2 /* MMError.swift in Sources */,
 				FEB61B462B6F2334005D25D2 /* CaseDetailView.swift in Sources */,
 				FEB61B2F2B6D7975005D25D2 /* NavigationApp.swift in Sources */,
 				FEB61B762B71FFFF005D25D2 /* ImportPhotoViewModel.swift in Sources */,
@@ -244,6 +259,7 @@
 				FEB61B482B6F2F80005D25D2 /* LetterEditView.swift in Sources */,
 				FEB61B672B70070B005D25D2 /* NavigationStackDemo.swift in Sources */,
 				FEB61B442B6F1498005D25D2 /* CaseListView.swift in Sources */,
+				FEC5413B2B73351600BF334A /* ChatBoxView.swift in Sources */,
 				FEB61B4B2B6F4364005D25D2 /* ImportPhotoView.swift in Sources */,
 				FEB61B6A2B71A3D6005D25D2 /* GTPManager.swift in Sources */,
 				FEB61B732B71D7E2005D25D2 /* Message.swift in Sources */,

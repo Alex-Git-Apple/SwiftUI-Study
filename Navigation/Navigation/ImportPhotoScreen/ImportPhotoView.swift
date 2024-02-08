@@ -10,6 +10,7 @@ import SwiftUI
 struct ImportPhotoView: View {
     
     @ObservedObject var vm: ImportPhotoViewModel
+    @Binding var isWaitingForGPTResponse: Bool
     
     @Environment(\.dismiss) private var dismiss
     
@@ -59,6 +60,7 @@ struct ImportPhotoView: View {
                 }
                 
                 Button {
+                    isWaitingForGPTResponse = true
                     vm.sendPhotosToGPT()
                     dismiss()
                 } label: {
@@ -79,6 +81,6 @@ struct ImportPhotoView: View {
 struct ImportPhotoScreen_Previews: PreviewProvider {
     
     static var previews: some View {
-        ImportPhotoView(vm: MockData.importPhotoViewModel)
+        ImportPhotoView(vm: MockData.importPhotoViewModel, isWaitingForGPTResponse: .constant(false))
     }
 }

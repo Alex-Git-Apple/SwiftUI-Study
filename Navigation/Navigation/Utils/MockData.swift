@@ -30,6 +30,13 @@ struct MockData {
                                 priority: .High,
                                 state: .Solved)
     
+    static let newLetter = Letter(title: "Your car insurance is due for renewal.",
+                                summary: "Please ensure it is renewed before April 15, 2024",
+                                notes: "",
+                                categories: [.Finance, .Payment],
+                                priority: .High,
+                                state: .Unsolved)
+    
     static let gptLetterResponse = GPTLetterSummary(title: "Your car insurance is due for renewal.",
                                                     summary: "Please ensure it is renewed before April 15, 2024",
                                                     categories: [.Finance, .Payment],
@@ -39,6 +46,7 @@ struct MockData {
         var vm = HomeViewModel(gptManager: FakeGPTManager())
         vm.solvedLetters = [ MockData.letter3 ]
         vm.unsolvedLetters = [ MockData.letter1, MockData.letter2 ]
+        vm.newLetter = MockData.newLetter
         return vm
     }()
     

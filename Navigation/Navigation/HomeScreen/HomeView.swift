@@ -10,12 +10,11 @@ import SwiftUI
 enum NavigationTag: Hashable {
     case SolvedLetters
     case UnSolvedLetters
-    case ImportPhtoto
     case ChatBot
 }
 
 struct HomeView: View {
-    @ObservedObject var vm: HomeViewModel
+    @EnvironmentObject var vm: HomeViewModel
     @State private var searchText: String = ""
     @State private var importPhoto = false
     
@@ -45,13 +44,7 @@ struct HomeView: View {
                                  backgroundColor: .red)
                     }
                     
-//                    NavigationLink(destination: ImportPhotoView(vm: vm.importedPhotoViewModel),
-//                                   tag: NavigationTag.ImportPhtoto,
-//                                   selection: $vm.tagSelection) {
-//                        EmptyView()
-//                    }
-                    
-                    NavigationLink(destination: Text("ChatBot"),
+                    NavigationLink(destination: ChatBoxView(),
                                    tag: NavigationTag.ChatBot,
                                    selection: $vm.tagSelection) {
                         EmptyView()
@@ -79,12 +72,12 @@ struct HomeView: View {
             }
             .sheet(isPresented: $importPhoto) {
                 // Choose from album or take a picture.
-                ImportPhotoView(vm: vm.importedPhotoViewModel)
+                ImportPhotoView(vm: vm.importedPhotoViewModel,
+                                isWaitingForGPTResponse: $vm.isWaitingForGPTResponse)
             }
-            .onAppear{
-                vm.solvedLetters = [ MockData.letter3 ]
-                vm.unsolvedLetters = [ MockData.letter1, MockData.letter2 ]
-            }
+            .fullScreenCover(isPresented: $vm.isWaitingForGPTResponse, content: {
+                ProgressView()
+            })
             
         }
     }
@@ -160,6 +153,7 @@ struct EmptyView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(vm: MockData.homeViewModel)
+        HomeView()
+            .environmentObject(MockData.homeViewModel)
     }
 }
