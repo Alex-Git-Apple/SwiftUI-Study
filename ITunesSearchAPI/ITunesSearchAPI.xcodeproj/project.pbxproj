@@ -61,11 +61,11 @@
 		FE9FCB512B79CD5200A39155 /* ITunesSearchAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FE9FCB542B79CD5200A39155 /* ContentView.swift */,
 				FE9FCB622B79CDAE00A39155 /* Model */,
 				FE9FCB612B79CDA100A39155 /* VIewModel */,
 				FE9FCB602B79CD9B00A39155 /* View */,
 				FE9FCB522B79CD5200A39155 /* ITunesSearchAPIApp.swift */,
-				FE9FCB542B79CD5200A39155 /* ContentView.swift */,
 				FE9FCB562B79CD5300A39155 /* Assets.xcassets */,
 				FE9FCB582B79CD5300A39155 /* Preview Content */,
 			);

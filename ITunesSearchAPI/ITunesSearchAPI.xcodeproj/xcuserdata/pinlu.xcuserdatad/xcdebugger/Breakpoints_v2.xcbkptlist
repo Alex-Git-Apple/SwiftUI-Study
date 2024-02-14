@@ -7,93 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "68B648E8-9CE5-49D2-9094-4CBD8DF6DA5F"
+            uuid = "39D63FF8-879B-449F-A3B2-50B74BE183E8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ITunesSearchAPI/VIewModel/AlbumListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "fetchAlbums(for:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "68B648E8-9CE5-49D2-9094-4CBD8DF6DA5F - b6da00bebbeb8e64"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for ITunesSearchAPI.AlbumListViewModel.fetchAlbums(for: Swift.String) async -&gt; ()"
-                  moduleName = "ITunesSearchAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pinlu/Documents/iOS%20Project/SwiftUI-Study/ITunesSearchAPI/ITunesSearchAPI/VIewModel/AlbumListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "280">
-               </Location>
-               <Location
-                  uuid = "68B648E8-9CE5-49D2-9094-4CBD8DF6DA5F - 5dd33cc894f378c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for ITunesSearchAPI.AlbumListViewModel.fetchAlbums(for: Swift.String) async -&gt; ()"
-                  moduleName = "ITunesSearchAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pinlu/Documents/iOS%20Project/SwiftUI-Study/ITunesSearchAPI/ITunesSearchAPI/VIewModel/AlbumListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "68B648E8-9CE5-49D2-9094-4CBD8DF6DA5F - 639641bb9e52ca62"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for ITunesSearchAPI.AlbumListViewModel.fetchAlbums(for: Swift.String) async -&gt; ()"
-                  moduleName = "ITunesSearchAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pinlu/Documents/iOS%20Project/SwiftUI-Study/ITunesSearchAPI/ITunesSearchAPI/VIewModel/AlbumListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "175">
-               </Location>
-               <Location
-                  uuid = "68B648E8-9CE5-49D2-9094-4CBD8DF6DA5F - 352ca1360305a863"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for ITunesSearchAPI.AlbumListViewModel.fetchAlbums(for: Swift.String) async -&gt; ()"
-                  moduleName = "ITunesSearchAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pinlu/Documents/iOS%20Project/SwiftUI-Study/ITunesSearchAPI/ITunesSearchAPI/VIewModel/AlbumListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "110">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "814DBB1E-80D1-4FAD-860E-C7CEC0F1A3FF"
+            uuid = "235495C5-6398-43E5-B64F-BCCB906BA792"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ITunesSearchAPI/VIewModel/AlbumListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "fetchAlbums(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C3E23BC-8EA1-49FB-BA72-0BFDAF675BF3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ITunesSearchAPI/VIewModel/AlbumListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "fetchAlbums(for:)"
             landmarkType = "7">
          </BreakpointContent>
