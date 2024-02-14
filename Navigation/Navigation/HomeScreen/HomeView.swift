@@ -44,7 +44,7 @@ struct HomeView: View {
                                  backgroundColor: .red)
                     }
                     
-                    NavigationLink(destination: ChatBoxView(),
+                    NavigationLink(destination: LetterChatDetailView(letter: $vm.newLetter),
                                    tag: NavigationTag.ChatBot,
                                    selection: $vm.tagSelection) {
                         EmptyView()

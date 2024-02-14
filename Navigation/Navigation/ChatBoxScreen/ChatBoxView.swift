@@ -13,6 +13,7 @@ struct ChatBoxView: View {
     @Environment(\.dismiss) var dismiss
     
     @State var chatMessage = ""
+    @Binding var letter: Letter?
     
     var body: some View {
         VStack(spacing: 20) {
@@ -21,7 +22,7 @@ struct ChatBoxView: View {
                     .bold()
                     .font(.title2)
                 Spacer()
-                Text(homeViewModel.newLetter?.title ?? "")
+                Text(letter?.title ?? "")
             }
             
             HStack {
@@ -29,7 +30,7 @@ struct ChatBoxView: View {
                     .bold()
                     .font(.title2)
                 Spacer()
-                Text(homeViewModel.newLetter?.priority.rawValue ?? "")
+                Text(letter?.priority.rawValue ?? "")
             }
             
             
@@ -38,7 +39,7 @@ struct ChatBoxView: View {
                     .bold()
                     .font(.title2)
                 Spacer()
-                Text(homeViewModel.newLetter?.summary ?? "")
+                Text(letter?.summary ?? "")
             }
             
             TextField("Ask me more...", text: $chatMessage)
@@ -65,6 +66,7 @@ struct ChatBoxView: View {
                         .foregroundColor(.red)
                         .padding()
                         .background(Color.black)
+                        .frame(width: 150, height: 100)
                         .cornerRadius(10)
                 }
                 
@@ -80,13 +82,14 @@ struct ChatBoxView: View {
                         .foregroundColor(.white)
                         .padding()
                         .background(Color.blue)
+                        .frame(width: 150, height: 100)
                         .cornerRadius(10)
                 }
                 
             }
         }
         .padding()
-        .background(.pink)
+        .background(Color(.systemBackground))
         .padding()
     }
     
@@ -95,7 +98,7 @@ struct ChatBoxView: View {
 
 struct ChatBoxView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatBoxView()
+        ChatBoxView(letter: .constant(MockData.letter3))
             .environmentObject(MockData.homeViewModel)
     }
 }

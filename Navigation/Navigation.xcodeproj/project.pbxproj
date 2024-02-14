@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE9FCB9B2B7AF5B100A39155 /* LetterKeyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9FCB9A2B7AF5B100A39155 /* LetterKeyInfoView.swift */; };
+		FE9FCB9D2B7AFC1600A39155 /* LetterChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9FCB9C2B7AFC1600A39155 /* LetterChatDetailView.swift */; };
 		FEB61B2F2B6D7975005D25D2 /* NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB61B2E2B6D7975005D25D2 /* NavigationApp.swift */; };
 		FEB61B312B6D7975005D25D2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB61B302B6D7975005D25D2 /* HomeView.swift */; };
 		FEB61B332B6D7977005D25D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB61B322B6D7977005D25D2 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE9FCB9A2B7AF5B100A39155 /* LetterKeyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterKeyInfoView.swift; sourceTree = "<group>"; };
+		FE9FCB9C2B7AFC1600A39155 /* LetterChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterChatDetailView.swift; sourceTree = "<group>"; };
 		FEB61B2B2B6D7975005D25D2 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB61B2E2B6D7975005D25D2 /* NavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationApp.swift; sourceTree = "<group>"; };
 		FEB61B302B6D7975005D25D2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				FEC5413A2B73351600BF334A /* ChatBoxView.swift */,
+				FE9FCB9A2B7AF5B100A39155 /* LetterKeyInfoView.swift */,
+				FE9FCB9C2B7AFC1600A39155 /* LetterChatDetailView.swift */,
 			);
 			path = ChatBoxScreen;
 			sourceTree = "<group>";
@@ -250,12 +256,14 @@
 				FEB61B3D2B6EBE57005D25D2 /* Letter.swift in Sources */,
 				FEB61B6E2B71A5A9005D25D2 /* CommonTypes.swift in Sources */,
 				FEB61B702B71A701005D25D2 /* MockData.swift in Sources */,
+				FE9FCB9B2B7AF5B100A39155 /* LetterKeyInfoView.swift in Sources */,
 				FEB61B412B6F1220005D25D2 /* HomeViewModel.swift in Sources */,
 				FEB61B922B72F05F005D25D2 /* MMError.swift in Sources */,
 				FEB61B462B6F2334005D25D2 /* CaseDetailView.swift in Sources */,
 				FEB61B2F2B6D7975005D25D2 /* NavigationApp.swift in Sources */,
 				FEB61B762B71FFFF005D25D2 /* ImportPhotoViewModel.swift in Sources */,
 				FEB61B6C2B71A539005D25D2 /* GPTLetterSummary.swift in Sources */,
+				FE9FCB9D2B7AFC1600A39155 /* LetterChatDetailView.swift in Sources */,
 				FEB61B482B6F2F80005D25D2 /* LetterEditView.swift in Sources */,
 				FEB61B672B70070B005D25D2 /* NavigationStackDemo.swift in Sources */,
 				FEB61B442B6F1498005D25D2 /* CaseListView.swift in Sources */,
