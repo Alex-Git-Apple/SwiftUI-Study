@@ -5,27 +5,52 @@
 //  Created by Pin Lu on 1/29/24.
 //
 
+import Combine
 import SwiftUI
 
 struct CameraView: View {
-    @State private var showCamera = false
-    @State private var selectedImage: UIImage?
-    @State var image: UIImage?
+    
+    @StateObject var vm = ViewModel()
+    
     var body: some View {
         VStack {
-            if let selectedImage{
-                Image(uiImage: selectedImage)
+            List(vm.images, id:\.self) { image in
+                Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
             }
-            
+
             Button("Open camera") {
-                self.showCamera.toggle()
+                vm.takePhoto()
             }
-            .fullScreenCover(isPresented: self.$showCamera) {
-                AccessCameraView(selectedImage: self.$selectedImage)
+            .fullScreenCover(isPresented: $vm.showCamera) {
+                AccessCameraView(selectedImage: $vm.selectedImage)
             }
         }
+    }
+    
+    func setBinding() {
+        
+    }
+}
+
+class ViewModel: ObservableObject {
+    @Published var showCamera = false
+    @Published var images = [UIImage]()
+    @Published var selectedImage: UIImage?
+    
+    private var subscriptions = Set<AnyCancellable>()
+    
+    init() {
+        $selectedImage.sink { image in
+            guard let image = image else { return }
+            self.images.append(image)
+        }
+        .store(in: &subscriptions)
+    }
+    
+    func takePhoto() {
+        showCamera = true
     }
 }
 
